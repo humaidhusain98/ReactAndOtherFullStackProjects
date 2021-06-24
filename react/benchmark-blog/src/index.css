@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Allura-normal';
+  src: url('/home/humaid/Desktop/react/benchmark-blog/src/Allura-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Allura-italic';
+  src: url('/home/humaid/Desktop/react/benchmark-blog/src/Lucida_Bright_Italic.ttf') format('truetype');
+}
+
+#title {
+  font-size: 3rem;
+  font-family: 'Allura-italic';
+  color:black;
+}
+
+#title:hover {
+  font-size: 3rem;
+  font-family: 'Allura-italic';
+  color: black;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1rem;
+  font-family: 'Allura-italic';
+  color: black;
+  padding-left: 10px;
+}
+
+.firstcontainer
+{
+  margin: 20px;
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: lightgray;
+}
+
+#blog-testbench
+{
+  font-size: 1rem;
+  font-family: 'Allura-italic';
+  color: black;
+}
+#blog-testbench:hover
+{
+  font-size: 1rem;
+  font-family: 'Allura-italic';
+  color: black;
+  font-weight: bold;
+}
+
+
+#blog-testbench-list
+{
+  font-size: 1rem;
+  font-family: 'Allura-italic';
+  color: black;
+}
+
+#breadcrumb-item
+{
+  font-family: 'Allura-normal';
+  font-size: 1rem;
+  color:black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+}
+
+.breadcrumb-parent
+{
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: lightgray;
+}
+
+
+.card-container
+{
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: grey;
+
+}
+
+
+#breadcrumb-item:hover
+{
+  font-family: 'Allura-normal';
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+.testbenchspecs
+{
+  margin: 20px;
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: lightgray;
+}
+
+
+.test1card-title.test2card-title.test3card-title
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+  margin: 10px;
+
+}
+
+.test1container {
+  margin:10px;
+  padding: 10px;
+  background-color: lightgray;
+
+}
+.test2container {
+  margin:10px;
+  padding: 10px;
+  background-color: lightgray;
+}
+.test3container {
+  margin:10px;
+  padding: 10px;
+  background-color: lightgray;
+
+}
+
+
+.main-container{
+  background-color: #708090;
+}
+
+.test1card-results 
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+.test2card-results 
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+.test3card-results 
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+.titletest1container
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+}
+.titletest2container
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+}
+.titletest3container
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+}
+
+.finalResults
+{
+  margin:20px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.title-finalResults
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+}
+.body-finalResults
+{
+  font-family: 'Allura-italic';
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  border: 10px;
+  background-color: white;
+}

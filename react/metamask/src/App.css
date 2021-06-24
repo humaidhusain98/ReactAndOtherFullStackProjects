@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+
+.App-header {
+  padding-top: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#App-header-loading {
+  padding-top: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#button-group {
+  align-items: center;
+  margin: 3%;
+}
+
+
+
+#connect {
+   width: 300px;
+   margin-top: 20%;
+   margin-left: 40%;
+}
+
+#writeFunc {
+  display: flex;
+  justify-content: space-around;
+}
+
+#writeFunc div {
+
+  padding: 10px;
+  margin: 10px;
+
+}
+
+#input-tags {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#wallet-balance {
+
+  padding : 10px;
+  border-radius: 6px;
+  margin : 30px;
+}
+
+#headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 3%;
+}
+
+
+#data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3%;
+  padding: 8px;
+  margin: 3%;
+}
+
+
+#head-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3%;
+  padding: 8px;
+  margin: 3%;
+}
+
+#view-contract {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#bonus-lead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#release-period {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 13%;
+}
+
+#bonus-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#slider-unlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#equivalent {
+  display: flex;
+  margin-left: 15rem;
+}
+
+@media only screen and (max-width: 750px){
+  #connect {
+    width: 150px;
+    margin-left: 30%;
+  }
+
+  #button-group {
+    width: 200px;
+  }
+
+
+}

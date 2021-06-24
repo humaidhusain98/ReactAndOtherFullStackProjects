@@ -1,0 +1,5 @@
+There were two methods with same url one of GET type and one of POST in jobs and career controller.
+To solve the problem of changing all GET to POST type these urls are changed:
+http://localhost:5000/jobs  to http://localhost:5000/jobs/add
+http://localhost:5000/career  to http://localhost:5000/career/add
+

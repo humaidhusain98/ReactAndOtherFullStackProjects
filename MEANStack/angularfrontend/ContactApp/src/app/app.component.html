@@ -1,0 +1,59 @@
+<div class="row">
+
+  <div class="col-3">
+    <button class="btn btn-lg btn-outline-primary" (click)="open(mymodal)">Add Contact</button>
+   
+    <ng-template #mymodal let-modal>
+      <form #f="ngForm">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Enter User Details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" class="form-control" name="fname"  id="fname" [(ngModel)]="fname" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" class="form-control" name="lname"  id="lname" [(ngModel)]="lname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile:</label>
+          <input type="text" class="form-control" name="mobile" id="mobile" [(ngModel)]="mobile"  required>
+        </div>
+
+        <button type="button"  [disabled]="!f.valid" (click)="modal.dismiss('Submitting');addContact()" class="btn btn-dark">Submit</button>
+      </div>
+    </form>
+    </ng-template>
+   
+
+  </div>
+  <div class="col-6">
+  <div *ngFor="let contact of ContactList">
+    <div class="card" style="width: 100;">
+      <div class="card-body">
+        <h2 class="card-title">{{contact._id}}</h2>
+        <h2 class="card-subtitle mb-2 text-muted">{{contact.phone}}</h2>
+        <p class="card-text">{{contact.first_name}}</p>
+        <p class="card-text" >{{contact.last_name}}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-3">
+    col-3
+  </div>
+
+  
+
+
+</div>
+
+
+

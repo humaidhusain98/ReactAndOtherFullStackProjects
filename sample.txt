@@ -1,0 +1,12 @@
+Name:  Md Humaid Husain
+
+Address: 27/1/1 Shamsul Huda Road Kolkata 700017
+
+Job Description: 
+1)Developing FrontEnd for Decentralized Applications.
+2)Using Web3.js to interact with the Ethereum blockchain network using the internet network to carry out basic BlockChain Tasks and functions.
+3)Integrating Decentralized Apps using Web3.js to execute Smart Contracts on the Ethereum BlockChain. 
+4)Integrating Metamask(a Decentralized wallet) to our DApp for Safe and Secure signing of transactions by the user and other wallet functions.
+5)Testing Smart Contracts for errors from the frontEnd and reporting it if any.
+
+Compensation Package: 1500US Dollars every month

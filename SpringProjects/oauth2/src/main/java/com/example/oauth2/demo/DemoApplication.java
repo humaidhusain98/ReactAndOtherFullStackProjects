@@ -1,0 +1,114 @@
+package com.example.oauth2.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.security.Principal;
+
+@SpringBootApplication
+
+public class DemoApplication {
+
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//github test auth
+//83d2b9d0aacc57e69849
+//71bfc4368a3649194d8cd44a94ddd21401a73113
+
+//linkedin testoauth2
+//id &secret
+//77c9akuzveztxv
+//Rewt6iLh2xN32aWv
+
+//https://www.linkedin.com/oauth/v2/login-success?app_id=55262623&auth_type=AC&flow=%7B%22scope%22%3A%22r_liteprofile%22%2C%22creationTime%22%3A1613034284913%2C%22state%22%3A%22someRandomString%22%2C%22appId%22%3A55262623%2C%22authorizationType%22%3A%22OAUTH2_AUTHORIZATION_CODE%22%2C%22redirectUri%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%2C%22currentStage%22%3A%22LOGIN_SUCCESS%22%2C%22currentSubStage%22%3A0%2C%22authFlowName%22%3A%22generic-permission-list%22%7D
+
+//{"access_token":"AQWSY5eXi5iGB6grfPGbl7Aj2SXU9bGmTBC_fmStV6wJzjGqQ-MvhYDCPHh6GNJOHI1mIY9P8uc8G80k0PGycaZcUE7r17nUxBxaIHJkE8ysKN7Lz8GA2H2VHsPJkJBPXWdPCarVSLeV2B8HK12syAA81bdEiU-64bmsYoFGToWxoIkKCmCSbnJlY0X8DSNVfb1StjhavjAb_dCzjCCAwv4vEjzQ7VIkbmD5SbI7eE4b-pCsE_H5T4Ir3qHCYj5iaWQE8JMrvwrmKiaUH0GlUznSsAgnvUbwBL34L-HAY5vIslzLndSmBu_M_fH5nyTVMWoeMi6eYLtt-rcCkIuJjExOzCF5AQ","expires_in":5183999}
+
+
+//https://api.linkedin.com/v2/me?oauth2_access_token=AQWSY5eXi5iGB6grfPGbl7Aj2SXU9bGmTBC_fmStV6wJzjGqQ-MvhYDCPHh6GNJOHI1mIY9P8uc8G80k0PGycaZcUE7r17nUxBxaIHJkE8ysKN7Lz8GA2H2VHsPJkJBPXWdPCarVSLeV2B8HK12syAA81bdEiU-64bmsYoFGToWxoIkKCmCSbnJlY0X8DSNVfb1StjhavjAb_dCzjCCAwv4vEjzQ7VIkbmD5SbI7eE4b-pCsE_H5T4Ir3qHCYj5iaWQE8JMrvwrmKiaUH0GlUznSsAgnvUbwBL34L-HAY5vIslzLndSmBu_M_fH5nyTVMWoeMi6eYLtt-rcCkIuJjExOzCF5AQ
+
+
+//https://www.linkedin.com/uas/oauth2/accessToken?client_secret=Rewt6iLh2xN32aWv&client_id=77c9akuzveztxv&redirect_uri=https://www.google.com/&grant_type=authorization_code&code=AQR-KA8Z10gfRWxjssEDZMqRauRk4UVulxynkPEqRtCdNXp6roQO2eObXJjJc2SFBf61zha0OjVKKIlagTKjmwzIJE5JCrYapKmSVnt8OoWkNtkkV1k0lBlUQvEybiJmkZBC-yJf5jpMGazf9-lZGZujnzLqP-AXQu3VMiWoVJTeEzjXD9fpp3qG_52hnD_F6nbQP1t_vbdgWOySSas
+
+
+//https://www.google.com/?code=AQQKK0Hh2jVOFwK1PcEzN6wUXrK_H5wiCevOoI0k_D_ig4kUdBRfEhp-etAVT3pSNRy-RiTrfvTgy-SLnMkT_UJF9n3ZCtl7mjrs-ZYJt6qkeTKhv23uMHoiMktcjJ3xoqBbxAvMKFpTkTUPidfSJ72926tabJth3eLzX1fLETc1GLKBCiZrE5-iZYXfqjn569e3HkxMaP-9x_Pt4Xk&state=someRandomString&client_id=77c9akuzveztxv&redirect_uri=https://www.google.com/
+
+//https://api.linkedin.com/v2/me?oauth2_access_token=AQWSY5eXi5iGB6grfPGbl7Aj2SXU9bGmTBC_fmStV6wJzjGqQ-MvhYDCPHh6GNJOHI1mIY9P8uc8G80k0PGycaZcUE7r17nUxBxaIHJkE8ysKN7Lz8GA2H2VHsPJkJBPXWdPCarVSLeV2B8HK12syAA81bdEiU-64bmsYoFGToWxoIkKCmCSbnJlY0X8DSNVfb1StjhavjAb_dCzjCCAwv4vEjzQ7VIkbmD5SbI7eE4b-pCsE_H5T4Ir3qHCYj5iaWQE8JMrvwrmKiaUH0GlUznSsAgnvUbwBL34L-HAY5vIslzLndSmBu_M_fH5nyTVMWoeMi6eYLtt-rcCkIuJjExOzCF5AQ
+
+//https://developer.linkedin.com/blog/posts/2018/redirecting-oauth-uas
+
+//Default LinkedIn
+//IuVL9w67ZyGhv3xyClientSecret
+//86i1bzb08lo1n9ClientId
+
+
+//Facebook TestOauth2
+//ClientId:750839428872152
+//AppSecret=171ab626ced8a75df99df0dd6b283a0d
+//
+//https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow
+
+//Google OAUTH2
+//CLIENT ID: 662008146301-clk3pt4jm3rdu7iiqlg5q7nggeraep2i.apps.googleusercontent.com
+//CLIENT SECRET : 55HNOQt0EeIUKAiGw98clLwr
+//Creation Date: 2 September 2020 at 12:50:29 GMT+5
+//URI: http://localhost:8080
+//REDIRECT URI: http://localhost:8080/login
+
+
+//http://localhost:8080/login?code=AQCM7dsQ0zEv1kXmP66HSqlRszcM8qEjUJEVw8lD9kV3xiVGpeosZzWLLCEP38tpeJjIXHporF4l9KwjQkk-p7xLjgVhqZLcfiiHJMlmGEm4lUOwsSTM4uoTyeSfJnShIObkUgy-MVI3ED4R2wGAIbKCGJB9XQiWWwsMv_PtxjCPscbN0krfLUZk7Kj7DdD-DQKT7lJTKsq_jzbu4DVX-LsO5HdjF_CLOsI7Q1A4ueMLmkez6b3uwZD5TFY2Fztc6uXMA4WYDWcRNsC4a5coMBuErOmLSNa8OdSN3M3-2foaesgXQ2G-R6FOkHJNxJHNbV8i374Pr9QlMsT50RfQIN3G&state=fdggfdfdgfdg#_=_
+
+//http://localhost:8080/?code=AQBd7XoOGDZ_cpJ6PW0uHKrvmHTZUcOHdLfJcSIUsSqjXvM73pg9xdRSoBNe7-S8XmwmavKWs9gHr5-99vjRTp83L0ZmP7rKEl8tf4FaM5Ieyy4ewT2k_1omgaH0Uf5I3HRyUv_f7pq8dpyzMhOTL4EwF8Bmw8qNUtuCeb6croR7k3r8Lzy9caN990ATPWy-rcRvNWoUE0rhOok_g4YuZEAa9SLRvbYjntzyWrNi0fEMcsHr5oWDX6LnZeVmNGWFi5p871Rk2dGUSaCSRmE6splBmqTO7MQuRbYeEzHfseLbBIzJRUPN1kYEjdWV7kO6HgHJfUKyshRs3UcmwNGzozCj&state=randomstring#_=_
+
+
+
+//https://www.google.com/?code=AQSwcZjqaI4wY8PkTnm22a19PPCzQc-F8NaKUPXWfJshl0hnJQ9myas0mXDgFp_uACsL_GtzpqKZQhkUHrE7lLLSVsuUKyH6i40VZd13J2KiiSz_EfthpbnrqFK64g-M2MmHJIuFJURU0UvKgO9FYVCmoz1MYmfo2P6dY8F7VVgsgznosg0AOO5DM3gDk4m5FtLMldjk2C0O5WLQ5B4&state=testing
+//https://www.google.com/?code=AQSwcZjqaI4wY8PkTnm22a19PPCzQc-F8NaKUPXWfJshl0hnJQ9myas0mXDgFp_uACsL_GtzpqKZQhkUHrE7lLLSVsuUKyH6i40VZd13J2KiiSz_EfthpbnrqFK64g-M2MmHJIuFJURU0UvKgO9FYVCmoz1MYmfo2P6dY8F7VVgsgznosg0AOO5DM3gDk4m5FtLMldjk2C0O5WLQ5B4&state=testing
+
+//https://www.google.com/?code=AQS1g5jXPHYnA607Vce0qDo-D3ca1b4eWje9j1YzWORtbIOhdH8bLiLMFHxpK9VwRVJVDXV5-h-KYsA9aiPvBNXiwZORIt6JFiSXMVYFz27wpwid-6DCt_7udtMXkWcCpzdrAMFMUAzT1Hln7onpiKEalT9crBtzXvA3gTPRUOKGpKV-_yBLswcuT-Ba8KcwnLMgWjKmmbpt1e6VM0M&state=testing
+//accessToken at 2:58 linkedin
+
+//https://api.linkedin.com/v2/me/?oauth2_access_token=AQX0giqmg94uxZtaIsgE1oXiYUI_4XQkPKhR5NLtHSKfDfMP4nIzxx2Kn84PoNRpRBAxm1rjuEJRQyabEk3Xx4O6T0s8A-UHcBSnob3kdmKt7873XIsGc39ufElzdDR2XHuFl7ZhplyVCG8PqgQTXegV_MsD51ZRjHcf022rhCeXef4Vag0n-AdvKgD3p9IxQdkClq5fdYt-TS1hB9w2EGkeg5eujMTgZkFtTPAuUiYmZ65DogDIKJK5GlJgzwKkutIQs191-WqSArVbewPoiqNDD5SW2wg_LA5NX8W9GBhTG8oyDXftYCVNqNbH5Zs1P_Qqsdy7oh_B0aK4JDbUPMk6bgaD4A
+//AQWQF3U198R0dgXds_PhDRkSrBYJxXj6oh0rxLTNDP3CEVSiY1Dd-Ir6XOgcKv1fj17fl-0Pt6zxnw278EoS5Jvjr0erKvhjTlTaIWebIyunU7fp7bzZdhrWEtg66wXy9di6YngbH0a-DYzKLjefEXTd3pTfmK2bq_iS_4HgKo89N6ghe4hhlPdvrPLmfdXiVZtiFim4_GOhKDNOEe9zeJKa5GHb3FPQO7HyEXrlVJJiyrQOl2S7KRk8lDyCv3ZzGexvwPpUfRk9VWHPvmEh1IvOuZQr5jDmbVpvwwkkM4lY_IvQJ4eYzhmKHjaySzVwX-4MEIyfYeft1XrvLlktDJUUHCqL-A

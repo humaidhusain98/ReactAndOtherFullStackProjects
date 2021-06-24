@@ -1,0 +1,20 @@
+{
+   "dateJobCreated":"16/04/21",
+    "dateTillValid":"28/11/21",
+    "companyId":"hnd346",
+    "companyTitle":"IBM",
+    "companyImageUrl":"www.companyimg.com",
+    "companyDescription":"One of the Best Companies in the World.It is a pioneer!!",
+    "category1":"Web Development",
+    "category2":"BackEnd Development",
+    "jobTitle":"Junior Full Stack Developer",
+    "salaryStart":5,
+    "salaryEnd":10,
+    "city":"Kolkata",
+    "country":"India",
+    "expStart":1,
+    "expEnd":5,
+    "jobDescription":"This job requires knowledge of javascript fullStack. Knowledge of NodeJS and a frontEnd Framework like Angular/React is preferred",
+    "topRequirements":"NodeJS,React,Angular,Bootstrap",
+    "compentencies":"Java-React-NodeJS-Angular-Bootstrap-CSS"
+}
